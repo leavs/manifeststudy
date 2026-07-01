@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+    <!-- 远程仓库配置，github 统一远程名 github -->
+    <remote name="github"
+            fetch="https://github.com/"
+            review="https://github.com/"/>
+
+    <!-- 默认参数：所有项目共用远程、默认分支main，同步时不自动切换分支 -->
+    <default remote="github" revision="master" sync-j="4"/>
+
+    <!-- 第一个仓库：industrial-pi -->
+    <project path="industrial-pi" name="Chipsee/industrial-pi.git" />
+
+    <!-- 第二个仓库：hardwaretest -->
+    <project path="hardwaretest" name="Chipsee/hardwaretest.git" />
+</manifest>
